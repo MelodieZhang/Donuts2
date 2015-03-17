@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		760245D01AB4E3EB00B393B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760245CF1AB4E3EB00B393B8 /* AppDelegate.swift */; };
+		760245D51AB4E3EB00B393B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 760245D31AB4E3EB00B393B8 /* Main.storyboard */; };
+		760245D71AB4E3EB00B393B8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 760245D61AB4E3EB00B393B8 /* Images.xcassets */; };
+		760245DA1AB4E3EB00B393B8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 760245D81AB4E3EB00B393B8 /* LaunchScreen.xib */; };
+		760245E61AB4E3EB00B393B8 /* _03_Dribble_ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760245E51AB4E3EB00B393B8 /* _03_Dribble_ClientTests.swift */; };
+		760245FE1AB53AD900B393B8 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760245FD1AB53AD900B393B8 /* Config.swift */; };
+		760246031AB53F1600B393B8 /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760246021AB53F1600B393B8 /* HttpService.swift */; };
+		761D5F451AB7391800E11F0A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761D5F441AB7391800E11F0A /* Utils.swift */; };
+		762F7A571AB55DEE007281B8 /* snapshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 762F7A561AB55DEE007281B8 /* snapshot.png */; };
+		762F7A651AB5F0E6007281B8 /* ShotCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762F7A641AB5F0E6007281B8 /* ShotCollectionViewController.swift */; };
+		762F7A671AB5F0F8007281B8 /* ShotCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762F7A661AB5F0F8007281B8 /* ShotCollectionViewCell.swift */; };
+		7683FA491AB5451D0012BBB8 /* DribbleObjectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7683FA481AB5451D0012BBB8 /* DribbleObjectHandler.swift */; };
+		7683FA4C1AB54ACE0012BBB8 /* DribbleBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7683FA4B1AB54ACE0012BBB8 /* DribbleBase.swift */; };
+		7683FA4E1AB54C320012BBB8 /* Shot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7683FA4D1AB54C320012BBB8 /* Shot.swift */; };
+		76BFC0371AB5FCEB006CF236 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BFC0361AB5FCEB006CF236 /* User.swift */; };
+		76BFC0391AB5FDFC006CF236 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BFC0381AB5FDFC006CF236 /* Comment.swift */; };
+		76BFC0411AB62B2A006CF236 /* ShotDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BFC0401AB62B2A006CF236 /* ShotDetailController.swift */; };
+		76BFC0431AB62CAB006CF236 /* ShotZoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BFC0421AB62CAB006CF236 /* ShotZoomController.swift */; };
+		76BFC0451AB62CD3006CF236 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BFC0441AB62CD3006CF236 /* ProfileViewController.swift */; };
+		76BFC0471AB62DE6006CF236 /* TransitionOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BFC0461AB62DE6006CF236 /* TransitionOperator.swift */; };
+		76BFC0491AB6306C006CF236 /* MegaTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BFC0481AB6306C006CF236 /* MegaTheme.swift */; };
+		76BFC04B1AB6308C006CF236 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BFC04A1AB6308B006CF236 /* CommentCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		760245E01AB4E3EB00B393B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 760245C21AB4E3EB00B393B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 760245C91AB4E3EB00B393B8;
+			remoteInfo = "003-Dribble-Client";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		760245CA1AB4E3EB00B393B8 /* 003-Dribble-Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "003-Dribble-Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		760245CE1AB4E3EB00B393B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		760245CF1AB4E3EB00B393B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		760245D41AB4E3EB00B393B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		760245D61AB4E3EB00B393B8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		760245D91AB4E3EB00B393B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		760245DF1AB4E3EB00B393B8 /* 003-Dribble-ClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "003-Dribble-ClientTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		760245E41AB4E3EB00B393B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		760245E51AB4E3EB00B393B8 /* _03_Dribble_ClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _03_Dribble_ClientTests.swift; sourceTree = "<group>"; };
+		760245FD1AB53AD900B393B8 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Config.swift; path = ../Config.swift; sourceTree = "<group>"; };
+		760246021AB53F1600B393B8 /* HttpService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpService.swift; path = ../HttpService.swift; sourceTree = "<group>"; };
+		761D5F441AB7391800E11F0A /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = ../Utils.swift; sourceTree = "<group>"; };
+		762F7A561AB55DEE007281B8 /* snapshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = snapshot.png; path = ../snapshot.png; sourceTree = "<group>"; };
+		762F7A641AB5F0E6007281B8 /* ShotCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShotCollectionViewController.swift; path = ../ShotCollectionViewController.swift; sourceTree = "<group>"; };
+		762F7A661AB5F0F8007281B8 /* ShotCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShotCollectionViewCell.swift; path = ../ShotCollectionViewCell.swift; sourceTree = "<group>"; };
+		7683FA481AB5451D0012BBB8 /* DribbleObjectHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DribbleObjectHandler.swift; path = ../DribbleObjectHandler.swift; sourceTree = "<group>"; };
+		7683FA4B1AB54ACE0012BBB8 /* DribbleBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DribbleBase.swift; path = ../DribbleBase.swift; sourceTree = "<group>"; };
+		7683FA4D1AB54C320012BBB8 /* Shot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Shot.swift; path = ../Shot.swift; sourceTree = "<group>"; };
+		76BFC0361AB5FCEB006CF236 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = ../User.swift; sourceTree = "<group>"; };
+		76BFC0381AB5FDFC006CF236 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Comment.swift; path = ../Comment.swift; sourceTree = "<group>"; };
+		76BFC0401AB62B2A006CF236 /* ShotDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShotDetailController.swift; path = ../ShotDetailController.swift; sourceTree = "<group>"; };
+		76BFC0421AB62CAB006CF236 /* ShotZoomController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShotZoomController.swift; path = ../ShotZoomController.swift; sourceTree = "<group>"; };
+		76BFC0441AB62CD3006CF236 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = ../ProfileViewController.swift; sourceTree = "<group>"; };
+		76BFC0461AB62DE6006CF236 /* TransitionOperator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransitionOperator.swift; path = ../TransitionOperator.swift; sourceTree = "<group>"; };
+		76BFC0481AB6306C006CF236 /* MegaTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MegaTheme.swift; path = ../MegaTheme.swift; sourceTree = "<group>"; };
+		76BFC04A1AB6308B006CF236 /* CommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommentCell.swift; path = ../CommentCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		760245C71AB4E3EB00B393B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		760245DC1AB4E3EB00B393B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		760245C11AB4E3EB00B393B8 = {
+			isa = PBXGroup;
+			children = (
+				760245D31AB4E3EB00B393B8 /* Main.storyboard */,
+				760245CC1AB4E3EB00B393B8 /* 003-Dribble-Client */,
+				760245E21AB4E3EB00B393B8 /* 003-Dribble-ClientTests */,
+				760245CB1AB4E3EB00B393B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		760245CB1AB4E3EB00B393B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				760245CA1AB4E3EB00B393B8 /* 003-Dribble-Client.app */,
+				760245DF1AB4E3EB00B393B8 /* 003-Dribble-ClientTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		760245CC1AB4E3EB00B393B8 /* 003-Dribble-Client */ = {
+			isa = PBXGroup;
+			children = (
+				76BFC0461AB62DE6006CF236 /* TransitionOperator.swift */,
+				76BFC0441AB62CD3006CF236 /* ProfileViewController.swift */,
+				76BFC0421AB62CAB006CF236 /* ShotZoomController.swift */,
+				762F7A641AB5F0E6007281B8 /* ShotCollectionViewController.swift */,
+				76BFC0401AB62B2A006CF236 /* ShotDetailController.swift */,
+				762F7A531AB55B2A007281B8 /* Views */,
+				76BFC04A1AB6308B006CF236 /* CommentCell.swift */,
+				762F7A661AB5F0F8007281B8 /* ShotCollectionViewCell.swift */,
+				7683FA4A1AB54AA50012BBB8 /* Objects */,
+				7683FA4D1AB54C320012BBB8 /* Shot.swift */,
+				76BFC0381AB5FDFC006CF236 /* Comment.swift */,
+				76BFC0361AB5FCEB006CF236 /* User.swift */,
+				7683FA4B1AB54ACE0012BBB8 /* DribbleBase.swift */,
+				760245FF1AB53B2700B393B8 /* Utils */,
+				76BFC0481AB6306C006CF236 /* MegaTheme.swift */,
+				761D5F441AB7391800E11F0A /* Utils.swift */,
+				760246021AB53F1600B393B8 /* HttpService.swift */,
+				7683FA481AB5451D0012BBB8 /* DribbleObjectHandler.swift */,
+				760245FD1AB53AD900B393B8 /* Config.swift */,
+				760245CD1AB4E3EB00B393B8 /* Supporting Files */,
+			);
+			path = "003-Dribble-Client";
+			sourceTree = "<group>";
+		};
+		760245CD1AB4E3EB00B393B8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				760245D61AB4E3EB00B393B8 /* Images.xcassets */,
+				762F7A561AB55DEE007281B8 /* snapshot.png */,
+				760245D81AB4E3EB00B393B8 /* LaunchScreen.xib */,
+				760245CF1AB4E3EB00B393B8 /* AppDelegate.swift */,
+				760245CE1AB4E3EB00B393B8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		760245E21AB4E3EB00B393B8 /* 003-Dribble-ClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				760245E51AB4E3EB00B393B8 /* _03_Dribble_ClientTests.swift */,
+				760245E31AB4E3EB00B393B8 /* Supporting Files */,
+			);
+			path = "003-Dribble-ClientTests";
+			sourceTree = "<group>";
+		};
+		760245E31AB4E3EB00B393B8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				760245E41AB4E3EB00B393B8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		760245FF1AB53B2700B393B8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Utils;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		762F7A531AB55B2A007281B8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		7683FA4A1AB54AA50012BBB8 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Objects;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		760245C91AB4E3EB00B393B8 /* 003-Dribble-Client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 760245E91AB4E3EB00B393B8 /* Build configuration list for PBXNativeTarget "003-Dribble-Client" */;
+			buildPhases = (
+				760245C61AB4E3EB00B393B8 /* Sources */,
+				760245C71AB4E3EB00B393B8 /* Frameworks */,
+				760245C81AB4E3EB00B393B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "003-Dribble-Client";
+			productName = "003-Dribble-Client";
+			productReference = 760245CA1AB4E3EB00B393B8 /* 003-Dribble-Client.app */;
+			productType = "com.apple.product-type.application";
+		};
+		760245DE1AB4E3EB00B393B8 /* 003-Dribble-ClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 760245EC1AB4E3EB00B393B8 /* Build configuration list for PBXNativeTarget "003-Dribble-ClientTests" */;
+			buildPhases = (
+				760245DB1AB4E3EB00B393B8 /* Sources */,
+				760245DC1AB4E3EB00B393B8 /* Frameworks */,
+				760245DD1AB4E3EB00B393B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				760245E11AB4E3EB00B393B8 /* PBXTargetDependency */,
+			);
+			name = "003-Dribble-ClientTests";
+			productName = "003-Dribble-ClientTests";
+			productReference = 760245DF1AB4E3EB00B393B8 /* 003-Dribble-ClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		760245C21AB4E3EB00B393B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = Shomigo;
+				TargetAttributes = {
+					760245C91AB4E3EB00B393B8 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					760245DE1AB4E3EB00B393B8 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 760245C91AB4E3EB00B393B8;
+					};
+				};
+			};
+			buildConfigurationList = 760245C51AB4E3EB00B393B8 /* Build configuration list for PBXProject "003-Dribble-Client" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 760245C11AB4E3EB00B393B8;
+			productRefGroup = 760245CB1AB4E3EB00B393B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				760245C91AB4E3EB00B393B8 /* 003-Dribble-Client */,
+				760245DE1AB4E3EB00B393B8 /* 003-Dribble-ClientTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		760245C81AB4E3EB00B393B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				760245D51AB4E3EB00B393B8 /* Main.storyboard in Resources */,
+				760245DA1AB4E3EB00B393B8 /* LaunchScreen.xib in Resources */,
+				760245D71AB4E3EB00B393B8 /* Images.xcassets in Resources */,
+				762F7A571AB55DEE007281B8 /* snapshot.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		760245DD1AB4E3EB00B393B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		760245C61AB4E3EB00B393B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76BFC04B1AB6308C006CF236 /* CommentCell.swift in Sources */,
+				76BFC0411AB62B2A006CF236 /* ShotDetailController.swift in Sources */,
+				760245D01AB4E3EB00B393B8 /* AppDelegate.swift in Sources */,
+				76BFC0371AB5FCEB006CF236 /* User.swift in Sources */,
+				76BFC0391AB5FDFC006CF236 /* Comment.swift in Sources */,
+				762F7A651AB5F0E6007281B8 /* ShotCollectionViewController.swift in Sources */,
+				76BFC0451AB62CD3006CF236 /* ProfileViewController.swift in Sources */,
+				762F7A671AB5F0F8007281B8 /* ShotCollectionViewCell.swift in Sources */,
+				76BFC0471AB62DE6006CF236 /* TransitionOperator.swift in Sources */,
+				7683FA491AB5451D0012BBB8 /* DribbleObjectHandler.swift in Sources */,
+				7683FA4C1AB54ACE0012BBB8 /* DribbleBase.swift in Sources */,
+				76BFC0431AB62CAB006CF236 /* ShotZoomController.swift in Sources */,
+				76BFC0491AB6306C006CF236 /* MegaTheme.swift in Sources */,
+				760245FE1AB53AD900B393B8 /* Config.swift in Sources */,
+				7683FA4E1AB54C320012BBB8 /* Shot.swift in Sources */,
+				761D5F451AB7391800E11F0A /* Utils.swift in Sources */,
+				760246031AB53F1600B393B8 /* HttpService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		760245DB1AB4E3EB00B393B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				760245E61AB4E3EB00B393B8 /* _03_Dribble_ClientTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		760245E11AB4E3EB00B393B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 760245C91AB4E3EB00B393B8 /* 003-Dribble-Client */;
+			targetProxy = 760245E01AB4E3EB00B393B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		760245D31AB4E3EB00B393B8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				760245D41AB4E3EB00B393B8 /* Base */,
+			);
+			name = Main.storyboard;
+			path = "003-Dribble-Client";
+			sourceTree = "<group>";
+		};
+		760245D81AB4E3EB00B393B8 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				760245D91AB4E3EB00B393B8 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		760245E71AB4E3EB00B393B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		760245E81AB4E3EB00B393B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		760245EA1AB4E3EB00B393B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "003-Dribble-Client/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		760245EB1AB4E3EB00B393B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "003-Dribble-Client/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		760245ED1AB4E3EB00B393B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "003-Dribble-ClientTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/003-Dribble-Client.app/003-Dribble-Client";
+			};
+			name = Debug;
+		};
+		760245EE1AB4E3EB00B393B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "003-Dribble-ClientTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/003-Dribble-Client.app/003-Dribble-Client";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		760245C51AB4E3EB00B393B8 /* Build configuration list for PBXProject "003-Dribble-Client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				760245E71AB4E3EB00B393B8 /* Debug */,
+				760245E81AB4E3EB00B393B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		760245E91AB4E3EB00B393B8 /* Build configuration list for PBXNativeTarget "003-Dribble-Client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				760245EA1AB4E3EB00B393B8 /* Debug */,
+				760245EB1AB4E3EB00B393B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		760245EC1AB4E3EB00B393B8 /* Build configuration list for PBXNativeTarget "003-Dribble-ClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				760245ED1AB4E3EB00B393B8 /* Debug */,
+				760245EE1AB4E3EB00B393B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 760245C21AB4E3EB00B393B8 /* Project object */;
+}
