@@ -1,7 +1,10 @@
 # 003-Dribble-Client
+
+A simple App that retrieves popular shots from Dribble.com and displayes related users' information & comments. 
+'
 The code is based on a tutorial by AppDesignVault. The videos are at: [How to make a Dribbble App ](https://youtu.be/MtcscjMxxq4?list=PL4ihBheGxq3d-MqLokNQHbH82qMzMdTUZ)
 
-## H2 More to do: 
+##  More to do: 
 
 1. Add UIPopOverViewController to show the images in detail 
 
@@ -9,7 +12,7 @@ The code is based on a tutorial by AppDesignVault. The videos are at: [How to ma
 
 3. Add Search 4. Add Settings 5. Add Login
 
-## H2 Some updates: 
+##  Some updates: 
 
 1. Created HttpService class to handle HTTP request, so as to abstract the functions 
 
