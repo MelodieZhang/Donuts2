@@ -1,15 +1,15 @@
 //
-//  ProfileViewController.swift
-//  iShots
+//  CollectionViewController.swift
+//  003-Dribble-Client
 //
-//  Created by Tope Abayomi on 20/11/2014.
-//  Copyright (c) 2014 App Design Vault. All rights reserved.
+//  Created by Audrey Li on 3/15/15.
+//  Copyright (c) 2015 Shomigo. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-class ProfileViewController : UITableViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class ProfileViewController : UITableViewController {
     
     @IBOutlet var bgImageView : UIImageView!
     @IBOutlet var profileImageView : UIImageView!
@@ -27,9 +27,6 @@ class ProfileViewController : UITableViewController, UICollectionViewDataSource,
     @IBOutlet var photosLabel : UILabel!
     @IBOutlet var photosCount : UILabel!
     
-    @IBOutlet var checkinsLabel : UILabel!
-    @IBOutlet var friendsLabel : UILabel!
-    
     @IBOutlet var photosContainer : UIView!
     @IBOutlet var photosCollectionLabel : UILabel!
     @IBOutlet var photosCollectionView : UICollectionView!
@@ -40,8 +37,12 @@ class ProfileViewController : UITableViewController, UICollectionViewDataSource,
     @IBOutlet var friendsLayout : UICollectionViewFlowLayout!
     
     var user : User!
-    var shots = [Shot]()
-    var followingUsers = [User]()
+    var shots: [Shot] = [Shot](){
+        didSet { self.photosCollectionView.reloadData() }
+    }
+    var followingUsers: [User] = [User]() {
+        didSet { self.friendsCollectionView.reloadData() }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -106,8 +107,6 @@ class ProfileViewController : UITableViewController, UICollectionViewDataSource,
         
         photosContainer.backgroundColor = UIColor(white: 0.92, alpha: 1.0)
         
-        photosCollectionView.delegate = self
-        photosCollectionView.dataSource = self
         photosCollectionView.backgroundColor = UIColor.clearColor()
         
         photosLayout.itemSize = CGSizeMake(90, 90)
@@ -118,12 +117,12 @@ class ProfileViewController : UITableViewController, UICollectionViewDataSource,
         
 
         DribbleObjectHandler.getShots(user.shotsUrl, callback: { (shots) -> Void in
-            self.didLoadShots(shots)
+           self.shots = shots
         })
         
         
         DribbleObjectHandler.getUsers(user.followingUrl, callback: { (users) -> Void in
-            self.didLoadUsers(users)
+            self.followingUsers = users
         })
        
         
@@ -131,8 +130,6 @@ class ProfileViewController : UITableViewController, UICollectionViewDataSource,
         friendsCollectionLabel.textColor = UIColor.blackColor()
         friendsCollectionLabel.text = "I FOLLOW THESE PEOPLE"
         
-        friendsCollectionView.delegate = self
-        friendsCollectionView.dataSource = self
         friendsCollectionView.backgroundColor = UIColor.clearColor()
         
         friendsLayout.itemSize = CGSizeMake(45, 45)
@@ -142,16 +139,6 @@ class ProfileViewController : UITableViewController, UICollectionViewDataSource,
         friendsLayout.scrollDirection = .Horizontal
     }
     
-    func didLoadShots(shots: [Shot]){
-        self.shots = shots
-        photosCollectionView.reloadData()
-    }
-    
-    func didLoadUsers(users: [User]){
-        self.followingUsers = users
-
-        friendsCollectionView.reloadData()
-    }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         
@@ -187,7 +174,7 @@ class ProfileViewController : UITableViewController, UICollectionViewDataSource,
             let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as UICollectionViewCell
             
             let imageView = cell.viewWithTag(1) as UIImageView
-            imageView.layer.cornerRadius = 20
+            imageView.layer.cornerRadius = 22
             
             let user = followingUsers[indexPath.row]
             

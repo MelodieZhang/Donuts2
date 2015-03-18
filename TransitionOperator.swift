@@ -1,9 +1,9 @@
 //
-//  TransitionOperator.swift
-//  Mega
+//  ShotDetailController.swift
+//  iShots
 //
-//  Created by Tope Abayomi on 19/11/2014.
-//  Copyright (c) 2014 App Design Vault. All rights reserved.
+//  Created by Tope Abayomi on 03/01/2015.
+//  Copyright (c) 2015 App Design Vault. All rights reserved.
 //
 
 import Foundation

@@ -27,7 +27,6 @@ class ShotZoomController : UIViewController {
             
             let image = UIImage(data: imageData)
             shotImageView.image = UIImage(data: imageData)
-            //shotImageView.bounds = CGRectMake(0, 0, image?.size.width, image?.size.height);
         }
         
         

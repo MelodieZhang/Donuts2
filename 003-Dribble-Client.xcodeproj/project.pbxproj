@@ -27,7 +27,7 @@
 		76BFC0431AB62CAB006CF236 /* ShotZoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BFC0421AB62CAB006CF236 /* ShotZoomController.swift */; };
 		76BFC0451AB62CD3006CF236 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BFC0441AB62CD3006CF236 /* ProfileViewController.swift */; };
 		76BFC0471AB62DE6006CF236 /* TransitionOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BFC0461AB62DE6006CF236 /* TransitionOperator.swift */; };
-		76BFC0491AB6306C006CF236 /* MegaTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BFC0481AB6306C006CF236 /* MegaTheme.swift */; };
+		76BFC0491AB6306C006CF236 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BFC0481AB6306C006CF236 /* Theme.swift */; };
 		76BFC04B1AB6308C006CF236 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BFC04A1AB6308B006CF236 /* CommentCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -66,7 +66,7 @@
 		76BFC0421AB62CAB006CF236 /* ShotZoomController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShotZoomController.swift; path = ../ShotZoomController.swift; sourceTree = "<group>"; };
 		76BFC0441AB62CD3006CF236 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = ../ProfileViewController.swift; sourceTree = "<group>"; };
 		76BFC0461AB62DE6006CF236 /* TransitionOperator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransitionOperator.swift; path = ../TransitionOperator.swift; sourceTree = "<group>"; };
-		76BFC0481AB6306C006CF236 /* MegaTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MegaTheme.swift; path = ../MegaTheme.swift; sourceTree = "<group>"; };
+		76BFC0481AB6306C006CF236 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Theme.swift; path = ../Theme.swift; sourceTree = "<group>"; };
 		76BFC04A1AB6308B006CF236 /* CommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommentCell.swift; path = ../CommentCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				760245D31AB4E3EB00B393B8 /* Main.storyboard */,
+				762F7A531AB55B2A007281B8 /* Views */,
 				760245CC1AB4E3EB00B393B8 /* 003-Dribble-Client */,
 				760245E21AB4E3EB00B393B8 /* 003-Dribble-ClientTests */,
 				760245CB1AB4E3EB00B393B8 /* Products */,
@@ -115,7 +116,6 @@
 				76BFC0421AB62CAB006CF236 /* ShotZoomController.swift */,
 				762F7A641AB5F0E6007281B8 /* ShotCollectionViewController.swift */,
 				76BFC0401AB62B2A006CF236 /* ShotDetailController.swift */,
-				762F7A531AB55B2A007281B8 /* Views */,
 				76BFC04A1AB6308B006CF236 /* CommentCell.swift */,
 				762F7A661AB5F0F8007281B8 /* ShotCollectionViewCell.swift */,
 				7683FA4A1AB54AA50012BBB8 /* Objects */,
@@ -124,7 +124,7 @@
 				76BFC0361AB5FCEB006CF236 /* User.swift */,
 				7683FA4B1AB54ACE0012BBB8 /* DribbleBase.swift */,
 				760245FF1AB53B2700B393B8 /* Utils */,
-				76BFC0481AB6306C006CF236 /* MegaTheme.swift */,
+				76BFC0481AB6306C006CF236 /* Theme.swift */,
 				761D5F441AB7391800E11F0A /* Utils.swift */,
 				760246021AB53F1600B393B8 /* HttpService.swift */,
 				7683FA481AB5451D0012BBB8 /* DribbleObjectHandler.swift */,
@@ -176,7 +176,6 @@
 			children = (
 			);
 			name = Views;
-			path = ..;
 			sourceTree = "<group>";
 		};
 		7683FA4A1AB54AA50012BBB8 /* Objects */ = {
@@ -300,7 +299,7 @@
 				7683FA491AB5451D0012BBB8 /* DribbleObjectHandler.swift in Sources */,
 				7683FA4C1AB54ACE0012BBB8 /* DribbleBase.swift in Sources */,
 				76BFC0431AB62CAB006CF236 /* ShotZoomController.swift in Sources */,
-				76BFC0491AB6306C006CF236 /* MegaTheme.swift in Sources */,
+				76BFC0491AB6306C006CF236 /* Theme.swift in Sources */,
 				760245FE1AB53AD900B393B8 /* Config.swift in Sources */,
 				7683FA4E1AB54C320012BBB8 /* Shot.swift in Sources */,
 				761D5F451AB7391800E11F0A /* Utils.swift in Sources */,

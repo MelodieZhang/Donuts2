@@ -1,9 +1,9 @@
 //
-//  ShotDetailController.swift
-//  iShots
+//  CollectionViewController.swift
+//  003-Dribble-Client
 //
-//  Created by Tope Abayomi on 03/01/2015.
-//  Copyright (c) 2015 App Design Vault. All rights reserved.
+//  Created by Audrey Li on 3/15/15.
+//  Copyright (c) 2015 Shomigo. All rights reserved.
 //
 
 import Foundation
@@ -22,7 +22,6 @@ class ShotDetailController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet var profileImageView : UIImageView!
     @IBOutlet var nameLabel : UILabel!
     
-    @IBOutlet var descriptionLabel : UILabel!
     @IBOutlet var commentTableView : UITableView!
     
     @IBOutlet var viewsCount : UILabel!
@@ -192,7 +191,7 @@ class ShotDetailController: UIViewController, UITableViewDataSource, UITableView
     }
     
   
-    
+    //check later how to implement
     @IBAction func zoomShot(sender: AnyObject?){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateViewControllerWithIdentifier("ShotZoomController") as ShotZoomController
@@ -205,7 +204,7 @@ class ShotDetailController: UIViewController, UITableViewDataSource, UITableView
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "profile" {
-            var controller = segue.destinationViewController as ProfileViewController
+            let controller = segue.destinationViewController as ProfileViewController
             
             controller.user = shot.user
         }

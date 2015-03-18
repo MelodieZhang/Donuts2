@@ -22,6 +22,7 @@ class ShotCollectionViewController: UICollectionViewController {
         static let COLLECTIONCELL_HEIGHT: CGFloat = 240
     }
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
