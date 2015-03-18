@@ -1,5 +1,5 @@
 # 003-Dribble-Client
-The code is based on a tutorial by AppDesignVault. The videos are at How to make a Dribbble App Part 1.
+The code is based on a tutorial by AppDesignVault. The videos are at: [How to make a Dribbble App ](https://youtu.be/MtcscjMxxq4?list=PL4ihBheGxq3d-MqLokNQHbH82qMzMdTUZ)
 
 More to do: 
 
