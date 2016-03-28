@@ -42,31 +42,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		760245CA1AB4E3EB00B393B8 /* 003-Dribble-Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "003-Dribble-Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		760245CA1AB4E3EB00B393B8 /* Dribbble-Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dribbble-Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		760245CE1AB4E3EB00B393B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		760245CF1AB4E3EB00B393B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		760245D41AB4E3EB00B393B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		760245D61AB4E3EB00B393B8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		760245D91AB4E3EB00B393B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		760245DF1AB4E3EB00B393B8 /* 003-Dribble-ClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "003-Dribble-ClientTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		760245DF1AB4E3EB00B393B8 /* Dribbble-Client.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dribbble-Client.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		760245E41AB4E3EB00B393B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		760245E51AB4E3EB00B393B8 /* _03_Dribble_ClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _03_Dribble_ClientTests.swift; sourceTree = "<group>"; };
-		760245FD1AB53AD900B393B8 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Config.swift; path = ../Config.swift; sourceTree = "<group>"; };
-		760246021AB53F1600B393B8 /* HttpService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpService.swift; path = ../HttpService.swift; sourceTree = "<group>"; };
-		761D5F441AB7391800E11F0A /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = ../Utils.swift; sourceTree = "<group>"; };
+		760245FD1AB53AD900B393B8 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		760246021AB53F1600B393B8 /* HttpService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
+		761D5F441AB7391800E11F0A /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		762F7A561AB55DEE007281B8 /* snapshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = snapshot.png; path = ../snapshot.png; sourceTree = "<group>"; };
 		762F7A641AB5F0E6007281B8 /* ShotCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShotCollectionViewController.swift; path = ../ShotCollectionViewController.swift; sourceTree = "<group>"; };
 		762F7A661AB5F0F8007281B8 /* ShotCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShotCollectionViewCell.swift; path = ../ShotCollectionViewCell.swift; sourceTree = "<group>"; };
-		7683FA481AB5451D0012BBB8 /* DribbleObjectHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DribbleObjectHandler.swift; path = ../DribbleObjectHandler.swift; sourceTree = "<group>"; };
-		7683FA4B1AB54ACE0012BBB8 /* DribbleBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DribbleBase.swift; path = ../DribbleBase.swift; sourceTree = "<group>"; };
-		7683FA4D1AB54C320012BBB8 /* Shot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Shot.swift; path = ../Shot.swift; sourceTree = "<group>"; };
-		76BFC0361AB5FCEB006CF236 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = ../User.swift; sourceTree = "<group>"; };
-		76BFC0381AB5FDFC006CF236 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Comment.swift; path = ../Comment.swift; sourceTree = "<group>"; };
+		7683FA481AB5451D0012BBB8 /* DribbleObjectHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DribbleObjectHandler.swift; sourceTree = "<group>"; };
+		7683FA4B1AB54ACE0012BBB8 /* DribbleBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DribbleBase.swift; sourceTree = "<group>"; };
+		7683FA4D1AB54C320012BBB8 /* Shot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shot.swift; sourceTree = "<group>"; };
+		76BFC0361AB5FCEB006CF236 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		76BFC0381AB5FDFC006CF236 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		76BFC0401AB62B2A006CF236 /* ShotDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShotDetailController.swift; path = ../ShotDetailController.swift; sourceTree = "<group>"; };
 		76BFC0421AB62CAB006CF236 /* ShotZoomController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShotZoomController.swift; path = ../ShotZoomController.swift; sourceTree = "<group>"; };
 		76BFC0441AB62CD3006CF236 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = ../ProfileViewController.swift; sourceTree = "<group>"; };
 		76BFC0461AB62DE6006CF236 /* TransitionOperator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransitionOperator.swift; path = ../TransitionOperator.swift; sourceTree = "<group>"; };
-		76BFC0481AB6306C006CF236 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Theme.swift; path = ../Theme.swift; sourceTree = "<group>"; };
+		76BFC0481AB6306C006CF236 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		76BFC04A1AB6308B006CF236 /* CommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommentCell.swift; path = ../CommentCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,10 +91,9 @@
 		760245C11AB4E3EB00B393B8 = {
 			isa = PBXGroup;
 			children = (
-				760245D31AB4E3EB00B393B8 /* Main.storyboard */,
 				762F7A531AB55B2A007281B8 /* Views */,
-				760245CC1AB4E3EB00B393B8 /* 003-Dribble-Client */,
-				760245E21AB4E3EB00B393B8 /* 003-Dribble-ClientTests */,
+				760245CC1AB4E3EB00B393B8 /* Dribbble-Client */,
+				760245E21AB4E3EB00B393B8 /* Dribbble-ClientTests */,
 				760245CB1AB4E3EB00B393B8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,35 +101,27 @@
 		760245CB1AB4E3EB00B393B8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				760245CA1AB4E3EB00B393B8 /* 003-Dribble-Client.app */,
-				760245DF1AB4E3EB00B393B8 /* 003-Dribble-ClientTests.xctest */,
+				760245CA1AB4E3EB00B393B8 /* Dribbble-Client.app */,
+				760245DF1AB4E3EB00B393B8 /* Dribbble-Client.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		760245CC1AB4E3EB00B393B8 /* 003-Dribble-Client */ = {
+		760245CC1AB4E3EB00B393B8 /* Dribbble-Client */ = {
 			isa = PBXGroup;
 			children = (
-				76BFC0461AB62DE6006CF236 /* TransitionOperator.swift */,
-				76BFC0441AB62CD3006CF236 /* ProfileViewController.swift */,
-				76BFC0421AB62CAB006CF236 /* ShotZoomController.swift */,
+				762F7A661AB5F0F8007281B8 /* ShotCollectionViewCell.swift */,
 				762F7A641AB5F0E6007281B8 /* ShotCollectionViewController.swift */,
 				76BFC0401AB62B2A006CF236 /* ShotDetailController.swift */,
 				76BFC04A1AB6308B006CF236 /* CommentCell.swift */,
-				762F7A661AB5F0F8007281B8 /* ShotCollectionViewCell.swift */,
+				76BFC0421AB62CAB006CF236 /* ShotZoomController.swift */,
+				76BFC0441AB62CD3006CF236 /* ProfileViewController.swift */,
+				76BFC0461AB62DE6006CF236 /* TransitionOperator.swift */,
 				7683FA4A1AB54AA50012BBB8 /* Objects */,
-				7683FA4D1AB54C320012BBB8 /* Shot.swift */,
-				76BFC0381AB5FDFC006CF236 /* Comment.swift */,
-				76BFC0361AB5FCEB006CF236 /* User.swift */,
-				7683FA4B1AB54ACE0012BBB8 /* DribbleBase.swift */,
 				760245FF1AB53B2700B393B8 /* Utils */,
-				76BFC0481AB6306C006CF236 /* Theme.swift */,
-				761D5F441AB7391800E11F0A /* Utils.swift */,
-				760246021AB53F1600B393B8 /* HttpService.swift */,
-				7683FA481AB5451D0012BBB8 /* DribbleObjectHandler.swift */,
-				760245FD1AB53AD900B393B8 /* Config.swift */,
 				760245CD1AB4E3EB00B393B8 /* Supporting Files */,
 			);
+			name = "Dribbble-Client";
 			path = "003-Dribble-Client";
 			sourceTree = "<group>";
 		};
@@ -146,12 +137,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		760245E21AB4E3EB00B393B8 /* 003-Dribble-ClientTests */ = {
+		760245E21AB4E3EB00B393B8 /* Dribbble-ClientTests */ = {
 			isa = PBXGroup;
 			children = (
 				760245E51AB4E3EB00B393B8 /* _03_Dribble_ClientTests.swift */,
 				760245E31AB4E3EB00B393B8 /* Supporting Files */,
 			);
+			name = "Dribbble-ClientTests";
 			path = "003-Dribble-ClientTests";
 			sourceTree = "<group>";
 		};
@@ -166,6 +158,11 @@
 		760245FF1AB53B2700B393B8 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				76BFC0481AB6306C006CF236 /* Theme.swift */,
+				761D5F441AB7391800E11F0A /* Utils.swift */,
+				760246021AB53F1600B393B8 /* HttpService.swift */,
+				7683FA481AB5451D0012BBB8 /* DribbleObjectHandler.swift */,
+				760245FD1AB53AD900B393B8 /* Config.swift */,
 			);
 			name = Utils;
 			path = ..;
@@ -174,6 +171,7 @@
 		762F7A531AB55B2A007281B8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				760245D31AB4E3EB00B393B8 /* Main.storyboard */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -181,6 +179,10 @@
 		7683FA4A1AB54AA50012BBB8 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
+				7683FA4D1AB54C320012BBB8 /* Shot.swift */,
+				76BFC0381AB5FDFC006CF236 /* Comment.swift */,
+				76BFC0361AB5FCEB006CF236 /* User.swift */,
+				7683FA4B1AB54ACE0012BBB8 /* DribbleBase.swift */,
 			);
 			name = Objects;
 			path = ..;
@@ -189,9 +191,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		760245C91AB4E3EB00B393B8 /* 003-Dribble-Client */ = {
+		760245C91AB4E3EB00B393B8 /* Dribbble-Client */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 760245E91AB4E3EB00B393B8 /* Build configuration list for PBXNativeTarget "003-Dribble-Client" */;
+			buildConfigurationList = 760245E91AB4E3EB00B393B8 /* Build configuration list for PBXNativeTarget "Dribbble-Client" */;
 			buildPhases = (
 				760245C61AB4E3EB00B393B8 /* Sources */,
 				760245C71AB4E3EB00B393B8 /* Frameworks */,
@@ -201,14 +203,14 @@
 			);
 			dependencies = (
 			);
-			name = "003-Dribble-Client";
+			name = "Dribbble-Client";
 			productName = "003-Dribble-Client";
-			productReference = 760245CA1AB4E3EB00B393B8 /* 003-Dribble-Client.app */;
+			productReference = 760245CA1AB4E3EB00B393B8 /* Dribbble-Client.app */;
 			productType = "com.apple.product-type.application";
 		};
-		760245DE1AB4E3EB00B393B8 /* 003-Dribble-ClientTests */ = {
+		760245DE1AB4E3EB00B393B8 /* Dribbble-ClientTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 760245EC1AB4E3EB00B393B8 /* Build configuration list for PBXNativeTarget "003-Dribble-ClientTests" */;
+			buildConfigurationList = 760245EC1AB4E3EB00B393B8 /* Build configuration list for PBXNativeTarget "Dribbble-ClientTests" */;
 			buildPhases = (
 				760245DB1AB4E3EB00B393B8 /* Sources */,
 				760245DC1AB4E3EB00B393B8 /* Frameworks */,
@@ -219,9 +221,9 @@
 			dependencies = (
 				760245E11AB4E3EB00B393B8 /* PBXTargetDependency */,
 			);
-			name = "003-Dribble-ClientTests";
+			name = "Dribbble-ClientTests";
 			productName = "003-Dribble-ClientTests";
-			productReference = 760245DF1AB4E3EB00B393B8 /* 003-Dribble-ClientTests.xctest */;
+			productReference = 760245DF1AB4E3EB00B393B8 /* Dribbble-Client.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -230,6 +232,7 @@
 		760245C21AB4E3EB00B393B8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = Shomigo;
 				TargetAttributes = {
@@ -242,7 +245,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 760245C51AB4E3EB00B393B8 /* Build configuration list for PBXProject "003-Dribble-Client" */;
+			buildConfigurationList = 760245C51AB4E3EB00B393B8 /* Build configuration list for PBXProject "Dribbble-Client" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -255,8 +258,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				760245C91AB4E3EB00B393B8 /* 003-Dribble-Client */,
-				760245DE1AB4E3EB00B393B8 /* 003-Dribble-ClientTests */,
+				760245C91AB4E3EB00B393B8 /* Dribbble-Client */,
+				760245DE1AB4E3EB00B393B8 /* Dribbble-ClientTests */,
 			);
 		};
 /* End PBXProject section */
@@ -320,7 +323,7 @@
 /* Begin PBXTargetDependency section */
 		760245E11AB4E3EB00B393B8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 760245C91AB4E3EB00B393B8 /* 003-Dribble-Client */;
+			target = 760245C91AB4E3EB00B393B8 /* Dribbble-Client */;
 			targetProxy = 760245E01AB4E3EB00B393B8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -432,7 +435,7 @@
 				INFOPLIST_FILE = "003-Dribble-Client/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Dribbble-Client";
 			};
 			name = Debug;
 		};
@@ -443,7 +446,7 @@
 				INFOPLIST_FILE = "003-Dribble-Client/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Dribbble-Client";
 			};
 			name = Release;
 		};
@@ -461,8 +464,8 @@
 				);
 				INFOPLIST_FILE = "003-Dribble-ClientTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/003-Dribble-Client.app/003-Dribble-Client";
+				PRODUCT_NAME = "Dribbble-Client";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dribbble-Client.app/Dribbble-Client";
 			};
 			name = Debug;
 		};
@@ -476,15 +479,15 @@
 				);
 				INFOPLIST_FILE = "003-Dribble-ClientTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/003-Dribble-Client.app/003-Dribble-Client";
+				PRODUCT_NAME = "Dribbble-Client";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dribbble-Client.app/Dribbble-Client";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		760245C51AB4E3EB00B393B8 /* Build configuration list for PBXProject "003-Dribble-Client" */ = {
+		760245C51AB4E3EB00B393B8 /* Build configuration list for PBXProject "Dribbble-Client" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				760245E71AB4E3EB00B393B8 /* Debug */,
@@ -493,7 +496,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		760245E91AB4E3EB00B393B8 /* Build configuration list for PBXNativeTarget "003-Dribble-Client" */ = {
+		760245E91AB4E3EB00B393B8 /* Build configuration list for PBXNativeTarget "Dribbble-Client" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				760245EA1AB4E3EB00B393B8 /* Debug */,
@@ -502,7 +505,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		760245EC1AB4E3EB00B393B8 /* Build configuration list for PBXNativeTarget "003-Dribble-ClientTests" */ = {
+		760245EC1AB4E3EB00B393B8 /* Build configuration list for PBXNativeTarget "Dribbble-ClientTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				760245ED1AB4E3EB00B393B8 /* Debug */,

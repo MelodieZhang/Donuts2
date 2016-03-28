@@ -1,6 +1,6 @@
 //
 //  HttpService.swift
-//  003-Dribble-Client
+//  003-Dribbble-Client
 //
 //  Created by Audrey Li on 3/14/15.
 //  Copyright (c) 2015 Shomigo. All rights reserved.
@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 // Need to update the file later once I learned more about multi-thread 
-class DribbleObjectHandler {
+class DribbbleObjectHandler {
     
     class func asyncLoadShotImage(shot: Shot, imageView : UIImageView){
         
@@ -77,7 +77,7 @@ class DribbleObjectHandler {
         var url = url + "?access_token=" + Config.ACCESS_TOKEN
         HttpService.getJSON(url) { (jsonData) -> Void in
             for shotData in jsonData {
-                let shot = Shot(data: shotData as NSDictionary)
+                let shot = Shot(data: shotData as! NSDictionary)
                 shots.append(shot)
             }
             
@@ -98,7 +98,7 @@ class DribbleObjectHandler {
         HttpService.getJSON(url, callback: { (jsonData) -> Void in
             for userData in jsonData {
                 
-                let user = User(data: userData["followee"] as NSDictionary)
+                let user = User(data: userData["followee"] as! NSDictionary)
                 
                 users.append(user)
                 
@@ -121,7 +121,7 @@ class DribbleObjectHandler {
         
         HttpService.getJSON(url, callback: { (jsonData) -> Void in
             for commentData in jsonData {
-                let comment = Comment(data: commentData as NSDictionary)
+                let comment = Comment(data: commentData as! NSDictionary)
                 comments.append(comment)
                 
                 let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT

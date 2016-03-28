@@ -1,6 +1,6 @@
 //
 //  CollectionViewController.swift
-//  003-Dribble-Client
+//  003-Dribbble-Client
 //
 //  Created by Audrey Li on 3/15/15.
 //  Copyright (c) 2015 Shomigo. All rights reserved.
@@ -53,7 +53,7 @@ class ProfileViewController : UITableViewController {
             profileImageView.image = UIImage(data: avatarData)
             bgImageView.image = UIImage(data: avatarData)
         }else{
-            DribbleObjectHandler.asyncLoadUserImage(user, imageView: profileImageView)
+            DribbbleObjectHandler.asyncLoadUserImage(user, imageView: profileImageView)
             
         }
         
@@ -116,12 +116,12 @@ class ProfileViewController : UITableViewController {
         photosLayout.scrollDirection = .Horizontal
         
 
-        DribbleObjectHandler.getShots(user.shotsUrl, callback: { (shots) -> Void in
+        DribbbleObjectHandler.getShots(user.shotsUrl, callback: { (shots) -> Void in
            self.shots = shots
         })
         
         
-        DribbleObjectHandler.getUsers(user.followingUrl, callback: { (users) -> Void in
+        DribbbleObjectHandler.getUsers(user.followingUrl, callback: { (users) -> Void in
             self.followingUsers = users
         })
        
@@ -159,13 +159,13 @@ class ProfileViewController : UITableViewController {
         if collectionView == photosCollectionView {
             let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as UICollectionViewCell
             
-            let imageView = cell.viewWithTag(1) as UIImageView
+            let imageView = cell.viewWithTag(1) as! UIImageView
             let shot = shots[indexPath.row]
             
             if let data = shot.imageData {
                 imageView.image = UIImage(data: data)
             }else{
-                 DribbleObjectHandler.asyncLoadShotImage(shot, imageView: imageView)
+                 DribbbleObjectHandler.asyncLoadShotImage(shot, imageView: imageView)
             }
 
             return cell
@@ -173,7 +173,7 @@ class ProfileViewController : UITableViewController {
             
             let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as UICollectionViewCell
             
-            let imageView = cell.viewWithTag(1) as UIImageView
+            let imageView = cell.viewWithTag(1) as! UIImageView
             imageView.layer.cornerRadius = 22
             
             let user = followingUsers[indexPath.row]
@@ -182,7 +182,7 @@ class ProfileViewController : UITableViewController {
                 imageView.image = UIImage(data: data)
             }else{
                 
-                DribbleObjectHandler.asyncLoadUserImage(user, imageView: imageView)
+                DribbbleObjectHandler.asyncLoadUserImage(user, imageView: imageView)
             }
 
             return cell
@@ -200,9 +200,9 @@ class ProfileViewController : UITableViewController {
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         if collectionView == photosCollectionView {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let controller = storyboard.instantiateViewControllerWithIdentifier("ShotDetailController") as ShotDetailController
+            let controller = storyboard.instantiateViewControllerWithIdentifier("ShotDetailController") as! ShotDetailController
             
-            let selectedItems = photosCollectionView.indexPathsForSelectedItems() as [NSIndexPath]
+            let selectedItems = photosCollectionView.indexPathsForSelectedItems()! as [NSIndexPath]
             let seletedIndexPath = selectedItems[0]
             
             let shot = shots[seletedIndexPath.row]
@@ -214,9 +214,9 @@ class ProfileViewController : UITableViewController {
            
         }else{
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let controller = storyboard.instantiateViewControllerWithIdentifier("ProfileViewController") as ProfileViewController
+            let controller = storyboard.instantiateViewControllerWithIdentifier("ProfileViewController") as! ProfileViewController
             
-            let selectedItems = friendsCollectionView.indexPathsForSelectedItems() as [NSIndexPath]
+            let selectedItems = friendsCollectionView.indexPathsForSelectedItems()! as [NSIndexPath]
             let seletedIndexPath = selectedItems[0]
             
             let user = followingUsers[seletedIndexPath.row]
@@ -230,8 +230,8 @@ class ProfileViewController : UITableViewController {
         var blurEffect = UIBlurEffect(style: UIBlurEffectStyle.Dark)
         var blurView = UIVisualEffectView(effect: blurEffect)
         blurView.frame = CGRectMake(0, 0, 600, 100)
-        
-        blurView.setTranslatesAutoresizingMaskIntoConstraints(false)
+      
+        blurView.translatesAutoresizingMaskIntoConstraints = false
         profileContainer.insertSubview(blurView, aboveSubview: bgImageView)
         
         let topConstraint = NSLayoutConstraint(item: profileContainer, attribute: .Top, relatedBy: .Equal, toItem: blurView, attribute: .Top, multiplier: 1.0, constant: 0.0)

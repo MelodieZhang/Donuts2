@@ -1,6 +1,6 @@
 //
 //  CollectionViewController.swift
-//  003-Dribble-Client
+//  003-Dribbble-Client
 //
 //  Created by Audrey Li on 3/15/15.
 //  Copyright (c) 2015 Shomigo. All rights reserved.
@@ -18,25 +18,25 @@ class ShotCollectionViewController: UICollectionViewController {
     
     @IBOutlet weak var layout: UICollectionViewFlowLayout!
     
-    private struct UICONFIG{
-        static let COLLECTIONCELL_HEIGHT: CGFloat = 240
-    }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.collectionView!.backgroundColor = UIColor.whiteColor()
 
         self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier1)
         self.collectionView?.backgroundColor = UIColor.clearColor()
         
         
-        let cellWidth = calcCellWidth(self.view.frame.size)
-        layout.itemSize = CGSizeMake(cellWidth, UICONFIG.COLLECTIONCELL_HEIGHT)
+//        let cellWidth = calcCellWidth(self.view.frame.size)
+        let cellWidth = self.view.bounds.width
+        let cellHeight = self.view.bounds.width
+        layout.itemSize = CGSizeMake(cellWidth, cellHeight)
         
         
         
         let url = Config.SHOT_URL + Config.ACCESS_TOKEN
-        DribbleObjectHandler.getShots(Config.SHOT_URL, callback: { (shots) -> Void in
+        DribbbleObjectHandler.getShots(Config.SHOT_URL, callback: { (shots) -> Void in
             self.shots = shots
         })
         
@@ -53,13 +53,19 @@ class ShotCollectionViewController: UICollectionViewController {
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as ShotCollectionViewCell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! ShotCollectionViewCell
         
         let shot = shots[indexPath.row]
-        cell.title.text = shot.title
+//        cell.title.text = shot.title
         cell.name.text = shot.user.name
+        cell.likesCount.text = String(shot.likesCount)
         
-        DribbleObjectHandler.asyncLoadShotImage(shot, imageView: cell.imageView)
+        DribbbleObjectHandler.asyncLoadShotImage(shot, imageView: cell.imageView)
+        DribbbleObjectHandler.asyncLoadUserImage(shot.user, imageView: cell.avatar)
+        
+        
+        cell.avatar.layer.cornerRadius = cell.avatar.bounds.width / 2
+        cell.avatar.layer.masksToBounds = true
     
         return cell
     }
@@ -73,22 +79,22 @@ class ShotCollectionViewController: UICollectionViewController {
         
         if segue.identifier == "details"{
             let selectedItems = self.collectionView!.indexPathsForSelectedItems()
-            let indexPath = selectedItems[0] as NSIndexPath
-            let desController: ShotDetailController = segue.destinationViewController as ShotDetailController
+            let indexPath = selectedItems![0] as NSIndexPath
+            let desController: ShotDetailController = segue.destinationViewController as! ShotDetailController
             let shot = shots[indexPath.row]
             desController.shot = shot
         }
     }
     
-    
-    func calcCellWidth(size: CGSize) -> CGFloat {
-        let transitionToWide = size.width > size.height
-        var cellWidth = size.width / 2
-        
-        if transitionToWide {
-            cellWidth = size.width / 3
-        }
-        return cellWidth
-    }
+//    
+//    func calcCellWidth(size: CGSize) -> CGFloat {
+//        let transitionToWide = size.width > size.height
+//        var cellWidth = size.width / 2
+//        
+//        if transitionToWide {
+//            cellWidth = size.width / 3
+//        }
+//        return cellWidth
+//    }
 
 }

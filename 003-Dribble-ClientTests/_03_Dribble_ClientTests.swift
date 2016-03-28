@@ -1,6 +1,6 @@
 //
-//  _03_Dribble_ClientTests.swift
-//  003-Dribble-ClientTests
+//  _03_Dribbble_ClientTests.swift
+//  003-Dribbble-ClientTests
 //
 //  Created by Audrey Li on 3/14/15.
 //  Copyright (c) 2015 Shomigo. All rights reserved.
@@ -9,7 +9,7 @@
 import UIKit
 import XCTest
 
-class _03_Dribble_ClientTests: XCTestCase {
+class _03_Dribbble_ClientTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

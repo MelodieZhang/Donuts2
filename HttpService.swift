@@ -1,6 +1,6 @@
 //
 //  HttpService.swift
-//  003-Dribble-Client
+//  003-Dribbble-Client
 //
 //  Created by Audrey Li on 3/14/15.
 //  Copyright (c) 2015 Shomigo. All rights reserved.
@@ -16,10 +16,17 @@ class HttpService {
         var session = NSURLSession.sharedSession()
         var task = session.dataTaskWithURL(nsURL, completionHandler: { data, response, error -> Void in
             if error != nil {
-                println("error !")
+                print("error !")
             } else {
-            let jsonData = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as NSArray
-                callback(jsonData)
+                do{
+                    if let jsonData = try NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers) as? NSArray {
+                        callback(jsonData)
+                    }
+
+                } catch let error as NSError {
+                    print(error)
+                }
+                
             }
         })
         task.resume()

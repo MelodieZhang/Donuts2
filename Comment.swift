@@ -1,6 +1,6 @@
 //
 //  Comment.swift
-//  003-Dribble-Client
+//  003-Dribbble-Client
 //
 //  Created by Audrey Li on 3/15/15.
 //  Copyright (c) 2015 Shomigo. All rights reserved.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Comment: DribbleBase {
+class Comment: DribbbleBase {
     
     var body : String!
     var date : String!

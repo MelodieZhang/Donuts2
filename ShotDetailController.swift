@@ -1,6 +1,6 @@
 //
 //  CollectionViewController.swift
-//  003-Dribble-Client
+//  003-Dribbble-Client
 //
 //  Created by Audrey Li on 3/15/15.
 //  Copyright (c) 2015 Shomigo. All rights reserved.
@@ -12,10 +12,9 @@ import UIKit
 class ShotDetailController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet var titleLabel : UILabel!
-    @IBOutlet var dateLabel : UILabel!
+//    @IBOutlet var dateLabel : UILabel!
     @IBOutlet var topImageView : UIImageView!
-    @IBOutlet var topGradientView : UIView!
-    @IBOutlet var dateImageView : UIImageView!
+//    @IBOutlet var dateImageView : UIImageView!
     
     @IBOutlet var backbutton : UIButton!
 
@@ -59,29 +58,29 @@ class ShotDetailController: UIViewController, UITableViewDataSource, UITableView
         titleLabel.textColor = UIColor.whiteColor()
         titleLabel.text = shot.title
         
-        dateLabel.font = UIFont(name: Theme.fontName, size: 10)
-        dateLabel.textColor = UIColor.whiteColor()
-        dateLabel.text = shot.date
-        
-        dateImageView.image = UIImage(named: "clock")?.imageWithRenderingMode(.AlwaysTemplate)
-        dateImageView.tintColor = UIColor.whiteColor()
+//        dateLabel.font = UIFont(name: Theme.fontName, size: 10)
+//        dateLabel.textColor = UIColor.whiteColor()
+//        dateLabel.text = shot.date
+//        
+//        dateImageView.image = UIImage(named: "clock")?.imageWithRenderingMode(.AlwaysTemplate)
+//        dateImageView.tintColor = UIColor.whiteColor()
         
         if let imageData = shot.imageData {
             topImageView.image = UIImage(data: imageData)
         }else{
-            DribbleObjectHandler.asyncLoadShotImage(shot, imageView: topImageView)
+            DribbbleObjectHandler.asyncLoadShotImage(shot, imageView: topImageView)
         }
         
         
-        topImageViewHeightConstraint.constant = 240
+//        topImageViewHeightConstraint.constant = 240
         
         nameLabel.font = UIFont(name: Theme.fontName, size: 16)
         nameLabel.textColor = UIColor.blackColor()
         nameLabel.text = "by \(shot.user.name)"
         
-        DribbleObjectHandler.asyncLoadUserImage(shot.user, imageView: profileImageView)
+        DribbbleObjectHandler.asyncLoadUserImage(shot.user, imageView: profileImageView)
  
-        profileImageView.layer.cornerRadius = 20
+        profileImageView.layer.cornerRadius = profileImageView.bounds.width / 2
         profileImageView.clipsToBounds = true // By default it is false
         
         
@@ -127,7 +126,7 @@ class ShotDetailController: UIViewController, UITableViewDataSource, UITableView
         
         let commentURL = shot.commentUrl + "?access_token=" + Config.ACCESS_TOKEN
         
-        DribbleObjectHandler.getComments(shot.commentUrl, callback: { (comments) -> Void in
+        DribbbleObjectHandler.getComments(shot.commentUrl, callback: { (comments) -> Void in
             self.comments = comments
         })
   
@@ -145,23 +144,23 @@ class ShotDetailController: UIViewController, UITableViewDataSource, UITableView
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
     
-        addShotGradient()
+//        addShotGradient()
     }
     
-    func addShotGradient(){
-        
-        topGradientView.clipsToBounds = true
-        
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = CGRectMake(0, 0, self.view.frame.width, 90)
-        gradientLayer.colors = [UIColor(white: 0.0, alpha: 0.0).CGColor, UIColor(white: 0.0, alpha: 0.5).CGColor]
-        
-        self.topGradientView.layer.addSublayer(gradientLayer)
-    }
+//    func addShotGradient(){
+//        
+//        topGradientView.clipsToBounds = true
+//        
+//        let gradientLayer = CAGradientLayer()
+//        gradientLayer.frame = CGRectMake(0, 0, self.view.frame.width, 90)
+//        gradientLayer.colors = [UIColor(white: 0.0, alpha: 0.0).CGColor, UIColor(white: 0.0, alpha: 0.5).CGColor]
+//        
+//        self.topGradientView.layer.addSublayer(gradientLayer)
+//    }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
   
-        var cell = tableView.dequeueReusableCellWithIdentifier("commentCell") as CommentCell
+        var cell = tableView.dequeueReusableCellWithIdentifier("commentCell") as! CommentCell
         
         let comment = comments[indexPath.row]
         
@@ -169,7 +168,7 @@ class ShotDetailController: UIViewController, UITableViewDataSource, UITableView
         cell.postLabel?.text = comment.body
         cell.dateLabel.text = comment.date
         
-        DribbleObjectHandler.asyncLoadUserImage(comment.user, imageView: cell.profileImageView)
+        DribbbleObjectHandler.asyncLoadUserImage(comment.user, imageView: cell.profileImageView)
 
         return cell
     }
@@ -194,7 +193,7 @@ class ShotDetailController: UIViewController, UITableViewDataSource, UITableView
     //check later how to implement
     @IBAction func zoomShot(sender: AnyObject?){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller = storyboard.instantiateViewControllerWithIdentifier("ShotZoomController") as ShotZoomController
+        let controller = storyboard.instantiateViewControllerWithIdentifier("ShotZoomController") as! ShotZoomController
         self.modalPresentationStyle = UIModalPresentationStyle.Custom
         controller.transitioningDelegate = transitionOperator
         controller.shot = shot
@@ -204,7 +203,7 @@ class ShotDetailController: UIViewController, UITableViewDataSource, UITableView
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "profile" {
-            let controller = segue.destinationViewController as ProfileViewController
+            let controller = segue.destinationViewController as! ProfileViewController
             
             controller.user = shot.user
         }

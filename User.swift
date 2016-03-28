@@ -1,6 +1,6 @@
 //
 //  User.swift
-//  003-Dribble-Client
+//  003-Dribbble-Client
 //
 //  Created by Audrey Li on 3/15/15.
 //  Copyright (c) 2015 Shomigo. All rights reserved.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class User: DribbleBase {
+class User: DribbbleBase {
     
     var avatarUrl : String!
     var name : String!
@@ -29,9 +29,9 @@ class User: DribbleBase {
         self.avatarUrl = Utils.getStringFromJSON(data, key: "avatar_url")
         
         self.location = Utils.getStringFromJSON(data, key: "location")
-        self.followingCount = data["followings_count"] as Int
-        self.followersCount = data["followers_count"] as Int
-        self.shotsCount = data["shots_count"] as Int
+        self.followingCount = data["followings_count"] as! Int
+        self.followersCount = data["followers_count"] as! Int
+        self.shotsCount = data["shots_count"] as! Int
         
         self.shotsUrl = Utils.getStringFromJSON(data, key: "shots_url")
         self.followingUrl = Utils.getStringFromJSON(data, key: "following_url")

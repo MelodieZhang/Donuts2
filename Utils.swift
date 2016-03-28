@@ -1,6 +1,6 @@
 //
 //  Utils.swift
-//  003-Dribble-Client
+//  003-Dribbble-Client
 //
 //  Created by Audrey Li on 3/16/15.
 //  Copyright (c) 2015 Shomigo. All rights reserved.
@@ -28,7 +28,7 @@ class Utils {
             r = stringToStrip.rangeOfString("<[^>]+>", options:.RegularExpressionSearch)
         }
         
-        return stringToStrip
+        return stringToStrip as String
     }
 
     class func formatDate(dateString: String) -> String {
