@@ -12,7 +12,7 @@ import UIKit
 class Theme {
     
     class var fontName : String {
-        return "Avenir-Book"
+        return "Pingfang SC"
     }
     
     class var boldFontName : String {

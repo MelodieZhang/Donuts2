@@ -11,7 +11,7 @@ import UIKit
 
 class ShotDetailController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    @IBOutlet var titleLabel : UILabel!
+//    @IBOutlet var titleLabel : UILabel!
 //    @IBOutlet var dateLabel : UILabel!
     @IBOutlet var topImageView : UIImageView!
 //    @IBOutlet var dateImageView : UIImageView!
@@ -30,7 +30,7 @@ class ShotDetailController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet var commentsCount : UILabel!
     @IBOutlet var commentsLabel : UILabel!
     
-    @IBOutlet var topImageViewHeightConstraint : NSLayoutConstraint!
+//    @IBOutlet var topImageViewHeightConstraint : NSLayoutConstraint!
  
     var shot: Shot!
     var comments: [Comment] = [Comment](){
@@ -39,8 +39,8 @@ class ShotDetailController: UIViewController, UITableViewDataSource, UITableView
     
     
     private struct UICONFIG{
-        static let statsCountFontSize : CGFloat = 16
-        static let statsLabelFontSize : CGFloat = 12
+        static let statsCountFontSize : CGFloat = 60
+        static let statsLabelFontSize : CGFloat = 14
         static let statsCountColor = UIColor(red: 0.32, green: 0.61, blue: 0.94, alpha: 1.0)
         static let statsLabelColor = UIColor(white: 0.7, alpha: 1.0)
     }
@@ -53,10 +53,10 @@ class ShotDetailController: UIViewController, UITableViewDataSource, UITableView
         super.viewDidLoad()
 
         title = shot.title
-        
-        titleLabel.font = UIFont(name: Theme.fontName, size: 21)
-        titleLabel.textColor = UIColor.whiteColor()
-        titleLabel.text = shot.title
+//        
+//        titleLabel.font = UIFont(name: Theme.fontName, size: 21)
+//        titleLabel.textColor = UIColor.whiteColor()
+//        titleLabel.text = shot.title
         
 //        dateLabel.font = UIFont(name: Theme.fontName, size: 10)
 //        dateLabel.textColor = UIColor.whiteColor()
@@ -74,9 +74,9 @@ class ShotDetailController: UIViewController, UITableViewDataSource, UITableView
         
 //        topImageViewHeightConstraint.constant = 240
         
-        nameLabel.font = UIFont(name: Theme.fontName, size: 16)
-        nameLabel.textColor = UIColor.blackColor()
-        nameLabel.text = "by \(shot.user.name)"
+//        nameLabel.font = UIFont(name: Theme.fontName, size: 16)
+//        nameLabel.textColor = UIColor.blackColor()
+        nameLabel.text = shot.user.name
         
         DribbbleObjectHandler.asyncLoadUserImage(shot.user, imageView: profileImageView)
  
@@ -94,28 +94,28 @@ class ShotDetailController: UIViewController, UITableViewDataSource, UITableView
         profileImageView.addGestureRecognizer(tapGesture)
         
         
-        viewsCount.font = UIFont(name: Theme.boldFontName, size: UICONFIG.statsCountFontSize)
-        viewsCount.textColor = UICONFIG.statsCountColor
+//        viewsCount.font = UIFont(name: Theme.boldFontName, size: UICONFIG.statsCountFontSize)
+//        viewsCount.textColor = UICONFIG.statsCountColor
         viewsCount.text = "\(shot.viewsCount)"
-        
-        viewsLabel.font = UIFont(name: Theme.fontName, size: UICONFIG.statsLabelFontSize)
-        viewsLabel.textColor = UICONFIG.statsLabelColor
+//        
+//        viewsLabel.font = UIFont(name: Theme.fontName, size: UICONFIG.statsLabelFontSize)
+//        viewsLabel.textColor = UICONFIG.statsLabelColor
         viewsLabel.text = "VIEWS"
         
-        likesCount.font = UIFont(name: Theme.boldFontName, size: UICONFIG.statsCountFontSize)
-        likesCount.textColor = UICONFIG.statsCountColor
+//        likesCount.font = UIFont(name: Theme.boldFontName, size: UICONFIG.statsCountFontSize)
+//        likesCount.textColor = UICONFIG.statsCountColor
         likesCount.text = "\(shot.likesCount)"
         
-        likesLabel.font = UIFont(name: Theme.fontName, size: UICONFIG.statsLabelFontSize)
-        likesLabel.textColor = UICONFIG.statsLabelColor
+//        likesLabel.font = UIFont(name: Theme.fontName, size: UICONFIG.statsLabelFontSize)
+//        likesLabel.textColor = UICONFIG.statsLabelColor
         likesLabel.text = "LIKES"
         
-        commentsCount.font = UIFont(name: Theme.boldFontName, size: UICONFIG.statsCountFontSize)
-        commentsCount.textColor = UICONFIG.statsCountColor
+//        commentsCount.font = UIFont(name: Theme.boldFontName, size: UICONFIG.statsCountFontSize)
+//        commentsCount.textColor = UICONFIG.statsCountColor
         commentsCount.text = "\(shot.commentCount)"
         
-        commentsLabel.font = UIFont(name: Theme.fontName, size: UICONFIG.statsLabelFontSize)
-        commentsLabel.textColor = UICONFIG.statsLabelColor
+//        commentsLabel.font = UIFont(name: Theme.fontName, size: UICONFIG.statsLabelFontSize)
+//        commentsLabel.textColor = UICONFIG.statsLabelColor
         commentsLabel.text = "COMMENTS"
         
         commentTableView.delegate = self

@@ -20,18 +20,18 @@ class CommentCell: UITableViewCell {
 
     override func awakeFromNib() {
         
-        dateImageView.image = UIImage(named: "clock")
-        dateImageView.alpha = 0.20
+//        dateImageView.image = UIImage(named: "clock")
+//        dateImageView.alpha = 0.20
         profileImageView.layer.cornerRadius = 15
         profileImageView.clipsToBounds = true
         
-        nameLabel.font = UIFont(name: Theme.fontName, size: 16)
+//        nameLabel.font = UIFont(name: Theme.fontName, size: 16)
         nameLabel.textColor = Theme.darkColor
         
-        postLabel?.font = UIFont(name: Theme.fontName, size: 12)
+//        postLabel?.font = UIFont(name: Theme.fontName, size: 12)
         postLabel?.textColor = Theme.lightColor
         
-        dateLabel.font = UIFont(name: Theme.fontName, size: 11)
+//        dateLabel.font = UIFont(name: Theme.fontName, size: 11)
         dateLabel.textColor = Theme.lightColor
     }
 

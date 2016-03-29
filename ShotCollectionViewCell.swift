@@ -21,7 +21,7 @@ class ShotCollectionViewCell: UICollectionViewCell {
         
         let selectedbgView = UIView(frame: self.bounds)
         self.selectedBackgroundView = selectedbgView
-        self.selectedBackgroundView?.backgroundColor = UIColor.grayColor()
+        self.selectedBackgroundView?.backgroundColor = UIColor.init(colorLiteralRed: 0, green: 0, blue: 0, alpha: 0.05)
     }
     
 }

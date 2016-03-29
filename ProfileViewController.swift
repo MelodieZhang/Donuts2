@@ -81,7 +81,7 @@ class ProfileViewController : UITableViewController {
         
         followingLabel.font = UIFont(name: Theme.fontName, size: statsLabelFontSize)
         followingLabel.textColor = statsLabelColor
-        followingLabel.text = "FOLLOWING"
+        followingLabel.text = "Followings"
         
         followersCount.font = UIFont(name: Theme.boldFontName, size: statsCountFontSize)
         followersCount.textColor = statsCountColor
@@ -89,7 +89,7 @@ class ProfileViewController : UITableViewController {
         
         followersLabel.font = UIFont(name: Theme.fontName, size: statsLabelFontSize)
         followersLabel.textColor = statsLabelColor
-        followersLabel.text = "FOLLOWERS"
+        followersLabel.text = "Followers"
         
         photosCount.font = UIFont(name: Theme.boldFontName, size: statsCountFontSize)
         photosCount.textColor = statsCountColor
@@ -97,20 +97,20 @@ class ProfileViewController : UITableViewController {
         
         photosLabel.font = UIFont(name: Theme.fontName, size: statsLabelFontSize)
         photosLabel.textColor = statsLabelColor
-        photosLabel.text = "SHOTS"
+        photosLabel.text = "Shots"
         
         addBlurView()
         
         photosCollectionLabel.font = UIFont(name: Theme.boldFontName, size: 14)
         photosCollectionLabel.textColor = UIColor.blackColor()
-        photosCollectionLabel.text = "MY OTHER SHOTS"
+        photosCollectionLabel.text = "MY SHOTS"
         
-        photosContainer.backgroundColor = UIColor(white: 0.92, alpha: 1.0)
+        photosContainer.backgroundColor = UIColor(white: 0.95, alpha: 1.0)
         
         photosCollectionView.backgroundColor = UIColor.clearColor()
         
-        photosLayout.itemSize = CGSizeMake(90, 90)
-        photosLayout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0)
+        photosLayout.itemSize = CGSizeMake(160, 120)
+        photosLayout.sectionInset = UIEdgeInsetsMake(0, 14, 50, 14)
         photosLayout.minimumInteritemSpacing = 5
         photosLayout.minimumLineSpacing = 10
         photosLayout.scrollDirection = .Horizontal
@@ -128,12 +128,12 @@ class ProfileViewController : UITableViewController {
         
         friendsCollectionLabel.font = UIFont(name: Theme.boldFontName, size: 14)
         friendsCollectionLabel.textColor = UIColor.blackColor()
-        friendsCollectionLabel.text = "I FOLLOW THESE PEOPLE"
+        friendsCollectionLabel.text = "I FOLLOW THEM"
         
         friendsCollectionView.backgroundColor = UIColor.clearColor()
         
-        friendsLayout.itemSize = CGSizeMake(45, 45)
-        friendsLayout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0)
+        friendsLayout.itemSize = CGSizeMake(40, 40)
+        friendsLayout.sectionInset = UIEdgeInsetsMake(0, 14, 0, 14)
         friendsLayout.minimumInteritemSpacing = 5
         friendsLayout.minimumLineSpacing = 10
         friendsLayout.scrollDirection = .Horizontal
@@ -145,7 +145,7 @@ class ProfileViewController : UITableViewController {
         if indexPath.row == 0{
             return 250
         }else if indexPath.row == 1 {
-            return 400
+            return 500
         }else if indexPath.row == 2 {
             return 100
         }else{
@@ -174,7 +174,7 @@ class ProfileViewController : UITableViewController {
             let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as UICollectionViewCell
             
             let imageView = cell.viewWithTag(1) as! UIImageView
-            imageView.layer.cornerRadius = 22
+            imageView.layer.cornerRadius = 20
             
             let user = followingUsers[indexPath.row]
             

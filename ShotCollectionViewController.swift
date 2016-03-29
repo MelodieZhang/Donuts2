@@ -25,12 +25,12 @@ class ShotCollectionViewController: UICollectionViewController {
         self.collectionView!.backgroundColor = UIColor.whiteColor()
 
         self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier1)
-        self.collectionView?.backgroundColor = UIColor.clearColor()
+        self.collectionView?.backgroundColor = UIColor.whiteColor()
         
         
 //        let cellWidth = calcCellWidth(self.view.frame.size)
         let cellWidth = self.view.bounds.width
-        let cellHeight = self.view.bounds.width
+        let cellHeight = cellWidth * 9 / 10
         layout.itemSize = CGSizeMake(cellWidth, cellHeight)
         
         
