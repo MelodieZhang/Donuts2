@@ -86,15 +86,6 @@ class ShotCollectionViewController: UICollectionViewController {
         }
     }
     
-//    
-//    func calcCellWidth(size: CGSize) -> CGFloat {
-//        let transitionToWide = size.width > size.height
-//        var cellWidth = size.width / 2
-//        
-//        if transitionToWide {
-//            cellWidth = size.width / 3
-//        }
-//        return cellWidth
-//    }
+
 
 }
