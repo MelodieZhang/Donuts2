@@ -72,9 +72,9 @@ class DribbbleObjectHandler {
 //        
 //    }
 
-    class func getShots(url: String, callback:(([Shot]) -> Void)){
+    class func getShots(url: String, page: Int, callback:(([Shot]) -> Void)){
         var shots = [Shot]()
-        var url = url + "?access_token=" + Config.ACCESS_TOKEN
+        var url = url + "?access_token=" + Config.ACCESS_TOKEN + "&page=" + String(page)
         HttpService.getJSON(url) { (jsonData) -> Void in
             for shotData in jsonData {
                 let shot = Shot(data: shotData as! NSDictionary)

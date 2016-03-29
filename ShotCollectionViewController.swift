@@ -13,11 +13,14 @@ let reuseIdentifier1 = "Cell"
 class ShotCollectionViewController: UICollectionViewController {
     
     var shots:[Shot] = [Shot]() {
-        didSet { self.collectionView?.reloadData() }
+        didSet{
+            self.collectionView?.reloadData()
+        }
     }
     
     @IBOutlet weak var layout: UICollectionViewFlowLayout!
     
+    var shotPages = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,12 +38,18 @@ class ShotCollectionViewController: UICollectionViewController {
         
         
         
-        let url = Config.SHOT_URL + Config.ACCESS_TOKEN
-        DribbbleObjectHandler.getShots(Config.SHOT_URL, callback: { (shots) -> Void in
+//        let url = Config.SHOT_URL + Config.ACCESS_TOKEN
+        
+        DribbbleObjectHandler.getShots(Config.SHOT_URL, page: 1,  callback: { (shots) -> Void in
             self.shots = shots
         })
         
+        
+ 
+        
     }
+    
+
     
 
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
@@ -66,6 +75,22 @@ class ShotCollectionViewController: UICollectionViewController {
         
         cell.avatar.layer.cornerRadius = cell.avatar.bounds.width / 2
         cell.avatar.layer.masksToBounds = true
+        
+        //如果 shot 数量减 1 等于位置行数 且 shotPage 小于 5，则请求 shot 加到后面
+        if shots.count - 1 == indexPath.row && shotPages < 5 {
+            shotPages = shotPages + 1
+            print(shotPages)
+//            let url = Config.SHOT_URL +
+            
+            DribbbleObjectHandler.getShots(Config.SHOT_URL, page:shotPages, callback: {(shots) -> Void in
+//                                self.shots = shots
+                
+                for shot in shots {
+                    self.shots.append(shot)
+                }
+            })
+        }
+
     
         return cell
     }

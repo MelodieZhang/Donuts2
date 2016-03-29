@@ -116,7 +116,7 @@ class ProfileViewController : UITableViewController {
         photosLayout.scrollDirection = .Horizontal
         
 
-        DribbbleObjectHandler.getShots(user.shotsUrl, callback: { (shots) -> Void in
+        DribbbleObjectHandler.getShots(user.shotsUrl, page: 1, callback: { (shots) -> Void in
            self.shots = shots
         })
         

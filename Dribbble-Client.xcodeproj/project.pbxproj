@@ -18,7 +18,7 @@
 		762F7A571AB55DEE007281B8 /* snapshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 762F7A561AB55DEE007281B8 /* snapshot.png */; };
 		762F7A651AB5F0E6007281B8 /* ShotCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762F7A641AB5F0E6007281B8 /* ShotCollectionViewController.swift */; };
 		762F7A671AB5F0F8007281B8 /* ShotCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762F7A661AB5F0F8007281B8 /* ShotCollectionViewCell.swift */; };
-		7683FA491AB5451D0012BBB8 /* DribbleObjectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7683FA481AB5451D0012BBB8 /* DribbleObjectHandler.swift */; };
+		7683FA491AB5451D0012BBB8 /* DribbbleObjectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7683FA481AB5451D0012BBB8 /* DribbbleObjectHandler.swift */; };
 		7683FA4C1AB54ACE0012BBB8 /* DribbleBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7683FA4B1AB54ACE0012BBB8 /* DribbleBase.swift */; };
 		7683FA4E1AB54C320012BBB8 /* Shot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7683FA4D1AB54C320012BBB8 /* Shot.swift */; };
 		76BFC0371AB5FCEB006CF236 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BFC0361AB5FCEB006CF236 /* User.swift */; };
@@ -57,7 +57,7 @@
 		762F7A561AB55DEE007281B8 /* snapshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = snapshot.png; path = ../snapshot.png; sourceTree = "<group>"; };
 		762F7A641AB5F0E6007281B8 /* ShotCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShotCollectionViewController.swift; path = ../ShotCollectionViewController.swift; sourceTree = "<group>"; };
 		762F7A661AB5F0F8007281B8 /* ShotCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShotCollectionViewCell.swift; path = ../ShotCollectionViewCell.swift; sourceTree = "<group>"; };
-		7683FA481AB5451D0012BBB8 /* DribbleObjectHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DribbleObjectHandler.swift; sourceTree = "<group>"; };
+		7683FA481AB5451D0012BBB8 /* DribbbleObjectHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DribbbleObjectHandler.swift; sourceTree = "<group>"; };
 		7683FA4B1AB54ACE0012BBB8 /* DribbleBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DribbleBase.swift; sourceTree = "<group>"; };
 		7683FA4D1AB54C320012BBB8 /* Shot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shot.swift; sourceTree = "<group>"; };
 		76BFC0361AB5FCEB006CF236 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 				76BFC0481AB6306C006CF236 /* Theme.swift */,
 				761D5F441AB7391800E11F0A /* Utils.swift */,
 				760246021AB53F1600B393B8 /* HttpService.swift */,
-				7683FA481AB5451D0012BBB8 /* DribbleObjectHandler.swift */,
+				7683FA481AB5451D0012BBB8 /* DribbbleObjectHandler.swift */,
 				760245FD1AB53AD900B393B8 /* Config.swift */,
 			);
 			name = Utils;
@@ -300,7 +300,7 @@
 				76BFC0451AB62CD3006CF236 /* ProfileViewController.swift in Sources */,
 				762F7A671AB5F0F8007281B8 /* ShotCollectionViewCell.swift in Sources */,
 				76BFC0471AB62DE6006CF236 /* TransitionOperator.swift in Sources */,
-				7683FA491AB5451D0012BBB8 /* DribbleObjectHandler.swift in Sources */,
+				7683FA491AB5451D0012BBB8 /* DribbbleObjectHandler.swift in Sources */,
 				7683FA4C1AB54ACE0012BBB8 /* DribbleBase.swift in Sources */,
 				76BFC0431AB62CAB006CF236 /* ShotZoomController.swift in Sources */,
 				76BFC0491AB6306C006CF236 /* Theme.swift in Sources */,
