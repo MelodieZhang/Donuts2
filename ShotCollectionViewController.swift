@@ -32,6 +32,7 @@ class ShotCollectionViewController: UICollectionViewController {
         
         
 //        let cellWidth = calcCellWidth(self.view.frame.size)
+        
         let cellWidth = self.view.bounds.width
         let cellHeight = cellWidth * 9 / 10
         layout.itemSize = CGSizeMake(cellWidth, cellHeight)
@@ -69,9 +70,11 @@ class ShotCollectionViewController: UICollectionViewController {
         cell.name.text = shot.user.name
         cell.likesCount.text = String(shot.likesCount)
         
-        DribbbleObjectHandler.asyncLoadShotImage(shot, imageView: cell.imageView)
-        DribbbleObjectHandler.asyncLoadUserImage(shot.user, imageView: cell.avatar)
+//        DribbbleObjectHandler.asyncLoadShotImage(shot, imageView: cell.imageView)
+//        DribbbleObjectHandler.asyncLoadUserImage(shot.user, imageView: cell.avatar)
         
+        cell.imageView.sd_setImageWithURL(NSURL(string: shot.imageUrl)!)
+        cell.avatar.sd_setImageWithURL(NSURL(string: shot.user.avatarUrl)!)
         
         cell.avatar.layer.cornerRadius = cell.avatar.bounds.width / 2
         cell.avatar.layer.masksToBounds = true

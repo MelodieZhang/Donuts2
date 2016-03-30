@@ -28,6 +28,8 @@
 		76BFC0471AB62DE6006CF236 /* TransitionOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BFC0461AB62DE6006CF236 /* TransitionOperator.swift */; };
 		76BFC0491AB6306C006CF236 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BFC0481AB6306C006CF236 /* Theme.swift */; };
 		76BFC04B1AB6308C006CF236 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BFC04A1AB6308B006CF236 /* CommentCell.swift */; };
+		86CFDB0E1CAB74060065CF12 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 86CFDB0D1CAB74060065CF12 /* Podfile */; };
+		E0D5EF761A24F7AD7478CC49 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55BA8E12265EC8FF31298658 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		166DA46F211213DEDD43E034 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		2EDB7C72DCF6DD12C2F7CF98 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		55BA8E12265EC8FF31298658 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		760245CA1AB4E3EB00B393B8 /* Dribbble-Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dribbble-Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		760245CE1AB4E3EB00B393B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		760245CF1AB4E3EB00B393B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +71,8 @@
 		76BFC0461AB62DE6006CF236 /* TransitionOperator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransitionOperator.swift; path = ../TransitionOperator.swift; sourceTree = "<group>"; };
 		76BFC0481AB6306C006CF236 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		76BFC04A1AB6308B006CF236 /* CommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommentCell.swift; path = ../CommentCell.swift; sourceTree = "<group>"; };
+		86CFDB0D1CAB74060065CF12 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		86CFDB0F1CAB74E20065CF12 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0D5EF761A24F7AD7478CC49 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,13 +94,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09E9FF726BCACE797E6F71F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				166DA46F211213DEDD43E034 /* Pods.debug.xcconfig */,
+				2EDB7C72DCF6DD12C2F7CF98 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		52FFBA8C1D176F51C85F9419 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55BA8E12265EC8FF31298658 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		760245C11AB4E3EB00B393B8 = {
 			isa = PBXGroup;
 			children = (
-				762F7A531AB55B2A007281B8 /* Views */,
+				86CFDB0D1CAB74060065CF12 /* Podfile */,
 				760245CC1AB4E3EB00B393B8 /* Dribbble-Client */,
+				86CFDB0F1CAB74E20065CF12 /* Bridging-Header.h */,
 				760245E21AB4E3EB00B393B8 /* Dribbble-ClientTests */,
 				760245CB1AB4E3EB00B393B8 /* Products */,
+				09E9FF726BCACE797E6F71F0 /* Pods */,
+				52FFBA8C1D176F51C85F9419 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,13 +136,8 @@
 		760245CC1AB4E3EB00B393B8 /* Dribbble-Client */ = {
 			isa = PBXGroup;
 			children = (
-				762F7A661AB5F0F8007281B8 /* ShotCollectionViewCell.swift */,
-				762F7A641AB5F0E6007281B8 /* ShotCollectionViewController.swift */,
-				76BFC0401AB62B2A006CF236 /* ShotDetailController.swift */,
-				76BFC04A1AB6308B006CF236 /* CommentCell.swift */,
-				76BFC0421AB62CAB006CF236 /* ShotZoomController.swift */,
-				76BFC0441AB62CD3006CF236 /* ProfileViewController.swift */,
-				76BFC0461AB62DE6006CF236 /* TransitionOperator.swift */,
+				762F7A531AB55B2A007281B8 /* Views */,
+				86CFDB101CAB75300065CF12 /* Controller */,
 				7683FA4A1AB54AA50012BBB8 /* Objects */,
 				760245FF1AB53B2700B393B8 /* Utils */,
 				760245CD1AB4E3EB00B393B8 /* Supporting Files */,
@@ -171,6 +194,7 @@
 				760245D31AB4E3EB00B393B8 /* Main.storyboard */,
 			);
 			name = Views;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		7683FA4A1AB54AA50012BBB8 /* Objects */ = {
@@ -185,6 +209,20 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		86CFDB101CAB75300065CF12 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				762F7A661AB5F0F8007281B8 /* ShotCollectionViewCell.swift */,
+				762F7A641AB5F0E6007281B8 /* ShotCollectionViewController.swift */,
+				76BFC0401AB62B2A006CF236 /* ShotDetailController.swift */,
+				76BFC04A1AB6308B006CF236 /* CommentCell.swift */,
+				76BFC0421AB62CAB006CF236 /* ShotZoomController.swift */,
+				76BFC0441AB62CD3006CF236 /* ProfileViewController.swift */,
+				76BFC0461AB62DE6006CF236 /* TransitionOperator.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -192,9 +230,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 760245E91AB4E3EB00B393B8 /* Build configuration list for PBXNativeTarget "Dribbble-Client" */;
 			buildPhases = (
+				1667DA4A9E5D7E3E505428A0 /* Check Pods Manifest.lock */,
 				760245C61AB4E3EB00B393B8 /* Sources */,
 				760245C71AB4E3EB00B393B8 /* Frameworks */,
 				760245C81AB4E3EB00B393B8 /* Resources */,
+				30897DCBB1D1FE107ED69B2E /* Embed Pods Frameworks */,
+				3B98D0EC4CD198907B245299 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -269,6 +310,7 @@
 			files = (
 				760245D51AB4E3EB00B393B8 /* Main.storyboard in Resources */,
 				760245DA1AB4E3EB00B393B8 /* LaunchScreen.xib in Resources */,
+				86CFDB0E1CAB74060065CF12 /* Podfile in Resources */,
 				760245D71AB4E3EB00B393B8 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +323,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1667DA4A9E5D7E3E505428A0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		30897DCBB1D1FE107ED69B2E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B98D0EC4CD198907B245299 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		760245C61AB4E3EB00B393B8 /* Sources */ = {
@@ -427,6 +517,7 @@
 		};
 		760245EA1AB4E3EB00B393B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 166DA46F211213DEDD43E034 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -436,11 +527,13 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "Dribbble-Client";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Melodie/Github/Donuts2/Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		760245EB1AB4E3EB00B393B8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EDB7C72DCF6DD12C2F7CF98 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -450,6 +543,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "Dribbble-Client";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Melodie/Github/Donuts2/Bridging-Header.h";
 			};
 			name = Release;
 		};

@@ -38,6 +38,7 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qSb-0G-APC">
                                             <rect key="frame" x="8" y="450" width="24" height="24"/>
                                             <constraints>
+                                                <constraint firstAttribute="width" secondItem="qSb-0G-APC" secondAttribute="height" multiplier="1:1" id="Fdo-ds-dd6"/>
                                                 <constraint firstAttribute="width" constant="24" id="fJv-tB-Byx"/>
                                                 <constraint firstAttribute="height" constant="24" id="xuJ-E6-zc9"/>
                                             </constraints>
@@ -81,6 +82,7 @@
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
+                                        <exclude reference="t7j-iF-lJK"/>
                                         <exclude reference="kPx-rI-03f"/>
                                     </mask>
                                 </variation>

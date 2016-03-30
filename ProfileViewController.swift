@@ -53,7 +53,8 @@ class ProfileViewController : UITableViewController {
             profileImageView.image = UIImage(data: avatarData)
             bgImageView.image = UIImage(data: avatarData)
         }else{
-            DribbbleObjectHandler.asyncLoadUserImage(user, imageView: profileImageView)
+//            DribbbleObjectHandler.asyncLoadUserImage(user, imageView: profileImageView)
+            profileImageView.sd_setImageWithURL(NSURL(string: user.avatarUrl)!)
             
         }
         
@@ -165,7 +166,9 @@ class ProfileViewController : UITableViewController {
             if let data = shot.imageData {
                 imageView.image = UIImage(data: data)
             }else{
-                 DribbbleObjectHandler.asyncLoadShotImage(shot, imageView: imageView)
+//                 DribbbleObjectHandler.asyncLoadShotImage(shot, imageView: imageView)
+                
+                imageView.sd_setImageWithURL(NSURL(string: shot.imageUrl)!)
             }
 
             return cell
@@ -182,7 +185,8 @@ class ProfileViewController : UITableViewController {
                 imageView.image = UIImage(data: data)
             }else{
                 
-                DribbbleObjectHandler.asyncLoadUserImage(user, imageView: imageView)
+//                DribbbleObjectHandler.asyncLoadUserImage(user, imageView: imageView)
+                imageView.sd_setImageWithURL(NSURL(string: user.avatarUrl)!)
             }
 
             return cell

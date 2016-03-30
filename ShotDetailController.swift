@@ -11,10 +11,8 @@ import UIKit
 
 class ShotDetailController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-//    @IBOutlet var titleLabel : UILabel!
-//    @IBOutlet var dateLabel : UILabel!
+
     @IBOutlet var topImageView : UIImageView!
-//    @IBOutlet var dateImageView : UIImageView!
     
     @IBOutlet var backbutton : UIButton!
 
@@ -30,7 +28,6 @@ class ShotDetailController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet var commentsCount : UILabel!
     @IBOutlet var commentsLabel : UILabel!
     
-//    @IBOutlet var topImageViewHeightConstraint : NSLayoutConstraint!
  
     var shot: Shot!
     var comments: [Comment] = [Comment](){
@@ -53,17 +50,6 @@ class ShotDetailController: UIViewController, UITableViewDataSource, UITableView
         super.viewDidLoad()
 
         title = shot.title
-//        
-//        titleLabel.font = UIFont(name: Theme.fontName, size: 21)
-//        titleLabel.textColor = UIColor.whiteColor()
-//        titleLabel.text = shot.title
-        
-//        dateLabel.font = UIFont(name: Theme.fontName, size: 10)
-//        dateLabel.textColor = UIColor.whiteColor()
-//        dateLabel.text = shot.date
-//        
-//        dateImageView.image = UIImage(named: "clock")?.imageWithRenderingMode(.AlwaysTemplate)
-//        dateImageView.tintColor = UIColor.whiteColor()
         
         if let imageData = shot.imageData {
             topImageView.image = UIImage(data: imageData)
@@ -72,13 +58,11 @@ class ShotDetailController: UIViewController, UITableViewDataSource, UITableView
         }
         
         
-//        topImageViewHeightConstraint.constant = 240
-        
 //        nameLabel.font = UIFont(name: Theme.fontName, size: 16)
 //        nameLabel.textColor = UIColor.blackColor()
         nameLabel.text = shot.user.name
         
-        DribbbleObjectHandler.asyncLoadUserImage(shot.user, imageView: profileImageView)
+        profileImageView.sd_setImageWithURL(NSURL(string: shot.user.avatarUrl)!)
  
         profileImageView.layer.cornerRadius = profileImageView.bounds.width / 2
         profileImageView.clipsToBounds = true // By default it is false
@@ -124,18 +108,18 @@ class ShotDetailController: UIViewController, UITableViewDataSource, UITableView
         commentTableView.rowHeight = UITableViewAutomaticDimension
 
         
-        let commentURL = shot.commentUrl + "?access_token=" + Config.ACCESS_TOKEN
+//        let commentURL = shot.commentUrl + "?access_token=" + Config.ACCESS_TOKEN
         
         DribbbleObjectHandler.getComments(shot.commentUrl, callback: { (comments) -> Void in
             self.comments = comments
         })
   
 
-        var tapGestureZoom = UITapGestureRecognizer(target: self, action: "zoomShot:")
-        tapGestureZoom.numberOfTapsRequired = 1
-        tapGestureZoom.numberOfTouchesRequired = 1
-        topImageView.userInteractionEnabled = true
-        topImageView.addGestureRecognizer(tapGestureZoom)
+//        let tapGestureZoom = UITapGestureRecognizer(target: self, action: #selector(ShotDetailController.zoomShot(_:)))
+//        tapGestureZoom.numberOfTapsRequired = 1
+//        tapGestureZoom.numberOfTouchesRequired = 1
+//        topImageView.userInteractionEnabled = true
+//        topImageView.addGestureRecognizer(tapGestureZoom)
         
     }
     
@@ -160,7 +144,7 @@ class ShotDetailController: UIViewController, UITableViewDataSource, UITableView
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
   
-        var cell = tableView.dequeueReusableCellWithIdentifier("commentCell") as! CommentCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("commentCell") as! CommentCell
         
         let comment = comments[indexPath.row]
         
@@ -168,8 +152,8 @@ class ShotDetailController: UIViewController, UITableViewDataSource, UITableView
         cell.postLabel?.text = comment.body
         cell.dateLabel.text = comment.date
         
-        DribbbleObjectHandler.asyncLoadUserImage(comment.user, imageView: cell.profileImageView)
-
+        cell.profileImageView.sd_setImageWithURL(NSURL(string: comment.user.avatarUrl)!)
+        
         return cell
     }
     
