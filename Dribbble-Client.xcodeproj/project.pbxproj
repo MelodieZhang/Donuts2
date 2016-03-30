@@ -15,7 +15,6 @@
 		760245FE1AB53AD900B393B8 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760245FD1AB53AD900B393B8 /* Config.swift */; };
 		760246031AB53F1600B393B8 /* HttpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760246021AB53F1600B393B8 /* HttpService.swift */; };
 		761D5F451AB7391800E11F0A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761D5F441AB7391800E11F0A /* Utils.swift */; };
-		762F7A571AB55DEE007281B8 /* snapshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 762F7A561AB55DEE007281B8 /* snapshot.png */; };
 		762F7A651AB5F0E6007281B8 /* ShotCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762F7A641AB5F0E6007281B8 /* ShotCollectionViewController.swift */; };
 		762F7A671AB5F0F8007281B8 /* ShotCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762F7A661AB5F0F8007281B8 /* ShotCollectionViewCell.swift */; };
 		7683FA491AB5451D0012BBB8 /* DribbbleObjectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7683FA481AB5451D0012BBB8 /* DribbbleObjectHandler.swift */; };
@@ -54,7 +53,6 @@
 		760245FD1AB53AD900B393B8 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		760246021AB53F1600B393B8 /* HttpService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpService.swift; sourceTree = "<group>"; };
 		761D5F441AB7391800E11F0A /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		762F7A561AB55DEE007281B8 /* snapshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = snapshot.png; path = ../snapshot.png; sourceTree = "<group>"; };
 		762F7A641AB5F0E6007281B8 /* ShotCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShotCollectionViewController.swift; path = ../ShotCollectionViewController.swift; sourceTree = "<group>"; };
 		762F7A661AB5F0F8007281B8 /* ShotCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShotCollectionViewCell.swift; path = ../ShotCollectionViewCell.swift; sourceTree = "<group>"; };
 		7683FA481AB5451D0012BBB8 /* DribbbleObjectHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DribbbleObjectHandler.swift; sourceTree = "<group>"; };
@@ -129,7 +127,6 @@
 			isa = PBXGroup;
 			children = (
 				760245D61AB4E3EB00B393B8 /* Images.xcassets */,
-				762F7A561AB55DEE007281B8 /* snapshot.png */,
 				760245D81AB4E3EB00B393B8 /* LaunchScreen.xib */,
 				760245CF1AB4E3EB00B393B8 /* AppDelegate.swift */,
 				760245CE1AB4E3EB00B393B8 /* Info.plist */,
@@ -273,7 +270,6 @@
 				760245D51AB4E3EB00B393B8 /* Main.storyboard in Resources */,
 				760245DA1AB4E3EB00B393B8 /* LaunchScreen.xib in Resources */,
 				760245D71AB4E3EB00B393B8 /* Images.xcassets in Resources */,
-				762F7A571AB55DEE007281B8 /* snapshot.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

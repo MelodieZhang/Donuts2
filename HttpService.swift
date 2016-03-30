@@ -12,9 +12,9 @@ import UIKit
 class HttpService {
 
     class func getJSON(url: String, callback:((NSArray) -> Void)){
-        var nsURL = NSURL(string: url)!
-        var session = NSURLSession.sharedSession()
-        var task = session.dataTaskWithURL(nsURL, completionHandler: { data, response, error -> Void in
+        let nsURL = NSURL(string: url)!
+        let session = NSURLSession.sharedSession()
+        let task = session.dataTaskWithURL(nsURL, completionHandler: { data, response, error -> Void in
             if error != nil {
                 print("error !")
             } else {
@@ -37,7 +37,7 @@ class HttpService {
         let downloadQueue = dispatch_queue_create("com.shomigo.processsdownload", nil)
         
         dispatch_async(downloadQueue) {
-            var data = NSData(contentsOfURL: NSURL(string: url)!)
+            let data = NSData(contentsOfURL: NSURL(string: url)!)
             var image : UIImage?
             if data != nil {
                 image = UIImage(data: data!)!
